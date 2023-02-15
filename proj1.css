@@ -1,21 +1,27 @@
 .container {
     display: flex;
-    flex-wrap: wrap;
-    width: 900px;
-    height: 700px;
-    margin: 0 auto;
-    border: 2px solid black;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    background-color: #3c3c3c;
-}
-
-.box {
-    width: 100px;
+  }
+  .box {
+    height: 600px;
+    border: 1px solid black;
+  }
+  .left-box, .right-box {
+    flex: 1;
+    padding: 5px;
+  }
+  .center-box {
+    flex: 3;
+    border: 3px solid red;
+    text-align: center;
+    background-color: blueviolet;
+  }
+.game-box {
+    width: 90px;
     height: 100px;
     flex-grow: 1;
     box-sizing: border-box;
     border: 2px solid #fff;
-    display: flex;
+    display: inline-flex;
     align-items: flex-end;
     justify-content: flex-end;
     font-size: 8pt;
@@ -24,12 +30,27 @@
     padding-bottom: 5px;
 }
 
-.box:nth-child(odd) {
+.game-box:nth-child(odd) {
     background-color: black;
     color: white;
 }
 
-.box:nth-child(even) {
+.game-box:nth-child(even) {
     background-color: red;
     color: black;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h5 {
+    text-align: right;
+    font-weight: bold;
 }
