@@ -5,8 +5,8 @@ body {
 }
 
 .background {
-  background-image: url('images/newbg6.jpg');
-  opacity: 0.4; /* adjust the opacity value as needed */
+  background-image: url('./newbg6.jpg');
+  opacity: 0.2; /* adjust the opacity value as needed */
   background-position: center;
   background-size: cover;
   position: fixed;
@@ -18,7 +18,7 @@ body {
 }
 
 .banner {
-  background-image: url(images/herobg3.png);
+  background-image: url(./herobg3.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -250,4 +250,10 @@ button:hover {
   max-width: 100%;
   height: auto;
   max-height: 100%;
+}
+
+p{
+  width:40%;
+  margin:auto;
+  font-size:20pt;
 }
