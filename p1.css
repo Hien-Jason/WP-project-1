@@ -92,13 +92,20 @@ button:hover {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+.main{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+}
 
 .recipe-head {
-  width: 450px;
+  width: 650px;
   height: 700px;
   overflow-y: scroll;
   float: left;
   border: 3px solid black;
+
   margin: 15px;
   padding: 10px;
   font-family: georgia;
@@ -111,13 +118,12 @@ button:hover {
 }
 
 .about {
-  width: 220px;
+  width: 250px;
   float: left;
   margin: 15px;
   padding: 10px;
   height: 700px;
   border: 3px solid black;
-  overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
 }
@@ -252,8 +258,14 @@ button:hover {
   max-height: 100%;
 }
 
-p{
-  width:40%;
+.intro p{
+  width:30%;
   margin:auto;
   font-size:20pt;
+}
+
+.recipe-head p{
+  margin:auto;
+  font-size:20pt;
+  width:70%;
 }
