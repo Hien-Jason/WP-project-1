@@ -261,3 +261,68 @@ button:hover {
   max-height: 100%;
 }
 
+@media (max-width: 600px) {
+  .banner {
+    height: 400px;
+  }
+  
+  #banner-info {
+    top: 50%;
+    font-size: 18px;
+  }
+  
+  .intro p {
+    width: 80%;
+    font-size: 16px;
+  }
+  
+  .list {
+    width: 90%;
+  }
+  
+  .about {
+    width: 90%;
+    margin: 5%;
+    height: auto;
+    float: none;
+  }
+  
+  .recipe {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
+  
+  #ingredient-head {
+    width: 90%;
+    height: auto;
+    overflow: visible;
+  }
+
+  #ingredient-head img,
+.ingredients li img {
+  display: none;
+}
+  
+  .recipe-head {
+    width: 90%;
+    height: auto;
+    overflow: visible;
+    margin: 5%;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+
+
+
+
