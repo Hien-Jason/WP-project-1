@@ -5,7 +5,7 @@ body {
 }
 
 .background {
-  background-image: url('./newbg6.jpg');
+  background-image: url('images/newbg6.jpg');
   opacity: 0.2; /* adjust the opacity value as needed */
   background-position: center;
   background-size: cover;
@@ -18,7 +18,7 @@ body {
 }
 
 .banner {
-  background-image: url(./herobg3.png);
+  background-image: url(images/herobg3.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -80,6 +80,12 @@ button:hover {
   font-family: papyrus;
 }
 
+.intro p{
+  width:40%;
+  margin:auto;
+  font-size:20pt;
+}
+
 
 
 
@@ -100,8 +106,11 @@ button:hover {
   float: left;
   border: 3px solid black;
   margin: 15px;
-  padding: 10px;
+  padding: 10px !important;
   font-family: georgia;
+}
+
+.recipe-head p {
   font-size: 14pt;
 }
 
@@ -252,8 +261,3 @@ button:hover {
   max-height: 100%;
 }
 
-p{
-  width:40%;
-  margin:auto;
-  font-size:20pt;
-}
