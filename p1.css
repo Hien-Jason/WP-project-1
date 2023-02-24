@@ -49,7 +49,7 @@ body {
 }
 
 button {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: 2px solid white;
   padding: 10px 20px;
@@ -64,6 +64,11 @@ button:hover {
 
 .animated-button:active button {
   transform: scale(0.95);
+}
+
+button a {
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -323,3 +328,11 @@ button:hover {
     flex-wrap: wrap;
   }
 }
+
+
+
+
+
+
+
+
