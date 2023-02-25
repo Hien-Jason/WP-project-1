@@ -72,7 +72,7 @@ button a {
 }
 
 .intro {
-  text-align: center;
+  text-align: justify;
   font-size: 14pt;
   margin: 15px;
   padding: 10px;
@@ -171,6 +171,18 @@ button a {
   animation-fill-mode: forwards;
 }
 
+#typewriter-text-1 {
+  opacity: 0;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 3.5s steps(30, end) forwards;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
 .typewriter-text:nth-of-type(2) {
   animation-delay: 3.5s;
 }
@@ -199,6 +211,16 @@ button a {
 }
 
 .typewriter-text::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: bottom;
+  border-left: .15em solid orange;
+  animation: caret 0.75s step-end infinite;
+}
+
+#typewriter-text-1::after {
   content: "";
   display: inline-block;
   width: 0;
@@ -396,5 +418,22 @@ button a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .sum-top {
+    width: 90%;
+    margin: auto;
+    font-size: 12pt;
+  }
+
+  .sum-box {
+    width: 80%;
+    margin: auto;
+    font-size: 12pt;
+  }
+
+  #typewriter-text-1 {
+    animation: none;
+    visibility: visible;
   }
 }
