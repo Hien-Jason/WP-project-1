@@ -84,7 +84,7 @@ button a {
 }
 
 .intro p{
-  width:40%;
+  width:50%;
   margin:auto;
   font-size:20pt;
 }
@@ -110,15 +110,13 @@ button a {
   object-fit: contain;
 }
 
-
-
-
 #ingredient-head {
   width: 650px;
   height: 720px;
   float: left;
   border: 3px solid black;
   margin: 15px;
+  font-family: Georgia;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -130,7 +128,7 @@ button a {
   float: left;
   border: 3px solid black;
   margin: 15px;
-  padding: 10px !important;
+  padding: 10px;
   font-family: georgia;
 }
 
@@ -154,6 +152,7 @@ button a {
   overflow-y: hidden;
   overflow-x: hidden;
   position: relative;
+  text-align: center;
 }
 
 .about h2, h3 {
@@ -322,6 +321,20 @@ button a {
       opacity: 1;
   }
 }
+
+.sum-box {
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  font-size: 12pt;
+}
+ .sum-top {
+  width: 80%;
+  margin: auto;
+  font-size: 18pt;
+  text-align: center;
+ }
 
 @media (max-width: 600px) {
   .banner {
