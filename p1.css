@@ -293,7 +293,7 @@ button a {
 
 .slide-text {
   font-style: italic;
-  animation: slide 2s steps(30, end) 0s forwards;
+  animation: slide 2s linear 0s forwards;
 }
 
 @keyframes slide {
