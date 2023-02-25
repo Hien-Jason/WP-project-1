@@ -71,10 +71,8 @@ button a {
   color: white;
 }
 
-
-
 .intro {
-  text-align: justify;
+  text-align: center;
   font-size: 14pt;
   margin: 15px;
   padding: 10px;
