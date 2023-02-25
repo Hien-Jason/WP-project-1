@@ -80,7 +80,7 @@ button a {
   padding: 10px;
 }
 
-.intro h1, h3 {
+.intro h1, h2, h3 {
   text-align: center;
   font-family: papyrus;
 }
@@ -89,6 +89,12 @@ button a {
   width:40%;
   margin:auto;
   font-size:20pt;
+}
+
+.intro pre {
+  text-align: center;
+  font-family: papyrus;
+  font-style: normal;
 }
 
 .bc {
@@ -285,6 +291,38 @@ button a {
   max-width: 100%;
   height: auto;
   max-height: 100%;
+}
+
+.slide-text {
+  font-style: italic;
+  animation: slide 2s steps(30, end) 0s forwards;
+}
+
+@keyframes slide {
+  0% {
+      width: 50%;
+      opacity: 0;
+  }
+
+  100% {
+      width: 100%;
+      opacity: 1;
+  }
+}
+
+#fade-text {
+  animation: fade 5s;
+  text-decoration: underline;
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
 
 @media (max-width: 600px) {

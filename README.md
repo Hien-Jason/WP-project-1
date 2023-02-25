@@ -1,5 +1,5 @@
 # WP-project-1
-This project is designed to showcase CSS transitions, transforms, and amimations. 
+This project is designed to showcase CSS transitions, transforms, and animations. 
 Our group was tasked with coming up with a concept that could be used to show all three.
 We decided to go with an interactive recipe page to implement the concepts.
 Animation is used to animate the text for the group members. 
