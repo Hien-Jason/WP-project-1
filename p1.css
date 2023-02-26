@@ -1,12 +1,13 @@
+/* To control the main body of the page */
 body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
-
+/* Handles the overall page background */
 .background {
   background-image: url('images/newbg6.jpg');
-  opacity: 0.2; /* adjust the opacity value as needed */
+  opacity: 0.2;
   background-position: center;
   background-size: cover;
   position: fixed;
@@ -17,6 +18,7 @@ body {
   z-index: -1;
 }
 
+/* Hero Banner Styling and Implementation */
 .banner {
   background-image: url(images/herobg3.png);
   background-size: cover;
@@ -48,6 +50,7 @@ body {
   font-weight: bold;
 }
 
+/* Button Styling */
 button {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -71,6 +74,7 @@ button a {
   color: white;
 }
 
+/* Styling for intro section */
 .intro {
   text-align: justify;
   font-size: 14pt;
@@ -110,17 +114,7 @@ button a {
   object-fit: contain;
 }
 
-#ingredient-head {
-  width: 650px;
-  height: 720px;
-  float: left;
-  border: 3px solid black;
-  margin: 15px;
-  font-family: Georgia;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
+/* Styling for recipe section */
 .recipe-head {
   width: 450px;
   height: 700px;
@@ -142,6 +136,7 @@ button a {
   font-family: papyrus;
 }
 
+/* Styling for about section */
 .about {
   width: 220px;
   float: left;
@@ -155,10 +150,11 @@ button a {
   text-align: center;
 }
 
-.about h2, h3 {
+.about h1, h2, h3 {
   text-align: center;
+  font-family: papyrus;
 }
-
+/* typewriter animation for text styling */
 .typewriter-text {
   opacity: 0;
   overflow: hidden;
@@ -235,9 +231,16 @@ button a {
   50% { border-color: orange }
 }
 
-.about h1 {
-  text-align: center;
-  font-family: papyrus;
+/* Styling for the Ingredient section as a whole */
+#ingredient-head {
+  width: 650px;
+  height: 720px;
+  float: left;
+  border: 3px solid black;
+  margin: 15px;
+  font-family: Georgia;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .list {
@@ -283,7 +286,7 @@ button a {
 .list label {
   cursor: pointer;
 }
-
+/* Animated image Styling */
 .list .img-wrapper {
   display: flex;
   justify-content: center;
@@ -312,6 +315,7 @@ button a {
   max-height: 100%;
 }
 
+/* For slide animations */
 .slide-text {
   font-style: italic;
   animation: slide 2s linear 0s forwards;
@@ -344,6 +348,7 @@ button a {
   }
 }
 
+/* Styling for new summary page elements */
 .sum-box {
   width: 700px;
   margin: auto;
@@ -358,6 +363,7 @@ button a {
   text-align: center;
  }
 
+ /* Styling for small screen devices */
 @media (max-width: 600px) {
   .banner {
     height: 400px;
