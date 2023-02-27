@@ -156,42 +156,24 @@ button a {
 }
 
 /* typewriter animation for text styling */
-.typewriter-text {
+.typewriter-header,
+.typewriter-name {
   opacity: 0;
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
-  animation: typing 3.5s steps(30, end) forwards;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
 }
 
-#typewriter-text-1 {
-  opacity: 0;
-  overflow: hidden;
-  border-right: .15em solid orange;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
+.typewriter-header {
   animation: typing 3.5s steps(30, end) forwards;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
 }
 
-.typewriter-text:nth-of-type(2) {
+.typewriter-name {
+  animation: typing 3.5s steps(30, end) forwards;
   animation-delay: 3.5s;
 }
-
-.typewriter-text:nth-of-type(3) {
-  animation-delay: 7s;
-}
-
-.typewriter-text:nth-of-type(4) {
-  animation-delay: 10.5s;
-}
-
 
 @keyframes typing {
   0% {
@@ -206,6 +188,34 @@ button a {
     opacity: 1;
   }
 }
+
+.typewriter-header::after,
+.typewriter-name::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: bottom;
+  border-left: .15em solid orange;
+  animation: caret 0.75s step-end infinite;
+}
+
+
+
+
+
+#typewriter-text-1 {
+  opacity: 0;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 3.5s steps(30, end) forwards;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
 
 .typewriter-text::after {
   content: "";
